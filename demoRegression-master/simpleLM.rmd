@@ -55,4 +55,14 @@ plot(LENGTH~CHEST,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-The adjusted R-squared for CHEST is 0.7869 which is better than the NECK variable adjusted R-squared which is 0.7476. This shows that the CHEST is better than NECK to predict LENGTH.
+The adjusted R-squared for CHEST is 0.7869 which is better than the NECK adjusted R-squared which is 0.7476. This shows that the CHEST is better than NECK to predict LENGTH.
+
+## Model LENGTH ~ AGE  this is an example  
+
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The variable AGE adjusted R-squared is 0.5073 which is worse than NECK adjusted R-squared which is 0.7476. This shows AGE is not better to predict length.
