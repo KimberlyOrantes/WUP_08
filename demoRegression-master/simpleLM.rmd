@@ -67,6 +67,16 @@ summary.lm(simp)
 ```
 The variable AGE adjusted R-squared is 0.5073 which is worse than NECK adjusted R-squared which is 0.7476. This shows AGE is not better to predict LENGTH.
 
+## Model LENGTH ~ HEADWTH  this is an example  
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared of HEADWTH (head width) is 0.5321 which is worse than the NECK adjusted R-squared which is 0.7476, therefore is isn't better to predict LENGTH.
+
 ## Model LENGTH ~ HEADLEN  this is an example  
 
 ```{r}
