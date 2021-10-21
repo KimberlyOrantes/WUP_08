@@ -65,4 +65,14 @@ plot(LENGTH~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-The variable AGE adjusted R-squared is 0.5073 which is worse than NECK adjusted R-squared which is 0.7476. This shows AGE is not better to predict length.
+The variable AGE adjusted R-squared is 0.5073 which is worse than NECK adjusted R-squared which is 0.7476. This shows AGE is not better to predict LENGTH.
+
+## Model LENGTH ~ HEADLEN  this is an example  
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+The adjusted R-squared for HEADLEN (head length) is 0.8434 which is better than NECK adjusted R-squared which is 0.7476. It is also better than the adjusted R-squared of CHEST which is 0.7869. This shows that the HEADLEN variable is the best variable to predict the LENGTH of bears.
