@@ -85,4 +85,4 @@ plot(LENGTH~HEADLEN,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-The adjusted R-squared for HEADLEN (head length) is 0.8434 which is better than NECK adjusted R-squared which is 0.7476. It is also better than the adjusted R-squared of CHEST which is 0.7869. This shows that the HEADLEN variable is the best variable to predict the LENGTH of bears.
+The adjusted R-squared for HEADLEN (head length) is 0.8434 which is better than NECK adjusted R-squared which is 0.7476. It is also better than the adjusted R-squared of CHEST which is 0.7869. This shows that the HEADLEN variable is the best variable to predict the LENGTH of bears. The order of variables from greatest to least to predict bear LENGTH are: HEADLEN, CHEST, NECK, WEIGHT, HEADWTH, and AGE. 
